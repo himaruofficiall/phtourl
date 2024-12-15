@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo to URL - Himaru Official</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Container Utama -->
+  <div class="main-container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Photo Menjadi URL</h1>
+      <p>Unggah gambar Anda dan dapatkan tautan URL yang mudah dibagikan!</p>
+    </div>
+
+    <!-- Upload Container -->
+    <i class="fa-solid fa-upload"></i>
+    <div class="upload-section">
+      <label for="imageUpload" class="upload-button">Pilih Gambar</label>
+      <input type="file" id="imageUpload" accept="image/*">
+      <div class="preview" id="preview"></div>
+      <div class="loader" id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="link-container" id="linkContainer" style="display: none;">
+        <input type="text" id="imageURL" readonly>
+        <button id="copyButton">Salin Link</button>
+      </div>
+    </div>
+
+    <!-- Penjelasan -->
+    <div class="description-section">
+      <h2>Apa itu "Photo Menjadi URL"?</h2>
+      <p>
+        Photo Menjadi URL adalah sebuah layanan yang mengubah foto atau gambar menjadi tautan unik. 
+        Tautan ini bisa Anda gunakan untuk berbagai kebutuhan, seperti membagikannya di media sosial, 
+        menyematkan di website, atau mengirimkan kepada teman Anda.
+      </p>
+
+      <h2>Bagaimana Caranya?</h2>
+      <ol>
+        <li>Unggah gambar Anda menggunakan tombol "Pilih Gambar" di atas.</li>
+        <li>Gambar akan diproses dan disimpan di server penyimpanan.</li>
+        <li>Anda akan menerima URL unik yang mengarahkan ke gambar Anda.</li>
+        <li>Salin URL tersebut dan bagikan ke mana saja dengan mudah!</li>
+      </ol>
+
+      <p>
+        Layanan ini sangat praktis, cepat, dan efisien untuk mengatur gambar secara online.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Himaru Official | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
